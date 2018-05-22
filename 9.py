@@ -4,31 +4,44 @@ class Solution:
         :type x: int
         :rtype: bool
         """
-        lst = list(x)
 
-        print(lst)
+        if x<0:
+            return False
+        elif x==0:
+            return True
+        else:
+            
+            
+            lst=[]
+            while x!=0 :
+                getnum=x%10
+                x=x//10
+                lst.append(getnum)
 
-        indexo = range((len(lst)-1)/2+1)
-        flag = 1
-        for i in indexo:
-            print(lst[i],lst[-i])
-            if lst[i]==lst[-i]:
-                continue
+            
+            length = len(lst)
+            
+            flag = 1
+            
+            for i in range(length//2+1):
+                
+                if lst[i]==lst[-i-1]:
+                    continue
+                else:
+                    flag=0
+                    break
+                
+
+            if flag==1:
+                return True
             else :
-                flag =0 
-                break
-        
-        return flag
-        
+                return False
+
         
 
 
 
 
-if __name__=='__main__':
-    sl= Solution()
-    if sl.isPalindrome('121') :
-        print('true')
-    else :
-        print('false')
-
+if __name__ == '__main__':
+    sl =Solution()
+    print(sl.isPalindrome(1))
