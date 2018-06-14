@@ -6,6 +6,8 @@ class Solution(object):
         """
         minute  =[0,0,0,0,0,0]
         hour = [0,0,0,0]
+        
+        
 
         
 
