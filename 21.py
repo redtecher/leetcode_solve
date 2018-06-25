@@ -19,6 +19,13 @@ class Solution:
         :type l2: ListNode
         :rtype: ListNode
         """
+
+
+
+
+if __name__=='__main__':
+    sl = Solution()
+    
         
 
 
