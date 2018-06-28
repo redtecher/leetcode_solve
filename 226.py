@@ -13,6 +13,8 @@ class Solution:
         """
         if root is None:
             return
+        
         p=root.left
         root.left = self.invertTree(root.right)
         root.right=self.invertTree(p)
+        return root
