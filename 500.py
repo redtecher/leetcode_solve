@@ -14,13 +14,13 @@ class Solution:
             k=i.lower()
             
             if k[0]  in firstline :
-                flag =1
+                flag = 1
                 
             if k[0]  in secondline :
                 flag = 2
                 
             if k[0]  in thirdline:
-                flag =3
+                flag = 3
                 
             
 
