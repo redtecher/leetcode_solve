@@ -62,8 +62,8 @@ class Solution:
                 resultlist=resultlist.next
         if carryflag==1:
             resultlist.next=ListNode(1)
-        print("结果是:",end="")
-        self.printalllist(head)
+        # print("结果是:",end="")
+        # self.printalllist(head)
 
         return head
         

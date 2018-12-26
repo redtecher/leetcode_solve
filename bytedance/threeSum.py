@@ -5,7 +5,8 @@ class Solution(object):
         :rtype: List[List[int]]
         """
         nums.sort()
-        print(nums)
+        length=
+
 
 
 
